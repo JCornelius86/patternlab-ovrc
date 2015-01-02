@@ -63,6 +63,14 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
 */
+
+/*------------------------------------*\
+    Additions by JZ
+\*------------------------------------*/
+.sg-colors li{
+  width: 280px;
+}
+
 /*------------------------------------*\
     $RESET
 \*------------------------------------*/
@@ -166,7 +174,7 @@ header, footer, nav, section, article, hgroup, figure {
 
 body {
   background: white;
-  font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font: 100%/1.5 "cs_regular", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
   color: #333333; }
 
