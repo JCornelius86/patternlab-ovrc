@@ -89,7 +89,40 @@ header, footer, nav, section, article, hgroup, figure {
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
+    Added by Manny and JZ
 \*------------------------------------*/
+.H1-Tablet{
+  color:#333333;
+  font-size:30px;
+  font-weight: lighter;
+}
+
+.H2-Tablet{
+  color:#333333;
+  font-size:24px;
+  font-weight: lighter;
+} 
+
+.H3-Tablet{
+  color:#333333;
+  font-size:18px;
+  font-weight: lighter;
+}  
+
+.H4-Tablet{
+  color:#999999;
+  font-size:16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.IconTitle{
+  color:#cccccc;
+  font-size:10px;
+  font-weight: lighter;
+  text-transform: uppercase;
+
+}
 /*------------------------------------*\
     $GLOBAL CLASSES
 \*------------------------------------*/
