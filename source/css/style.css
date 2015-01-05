@@ -65,13 +65,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 */
 
 /*------------------------------------*\
-    Additions by JZ
-\*------------------------------------*/
-.sg-colors li{
-  width: 18% !important;
-}
-
-/*------------------------------------*\
     $RESET
 \*------------------------------------*/
 /* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
@@ -91,6 +84,10 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL ELEMENTS
     Added by Manny and JZ
 \*------------------------------------*/
+.sg-colors li{
+  width: 18% !important;
+}
+
 .H1-Tablet{
   color:#333333;
   font-size:30px;
