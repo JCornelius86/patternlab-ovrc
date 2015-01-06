@@ -99,6 +99,10 @@ header, footer, nav, section, article, hgroup, figure {
   cursor: default;
 }
 
+.image-separator{
+  margin-bottom: 40px;
+}
+
 .sg-colors li{
   width: 24% !important;
 }
