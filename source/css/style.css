@@ -596,12 +596,7 @@ td {
   border-bottom: 1px solid #dbdbdb; }
 
 .logo {
-  float: left;
-  max-width: 8rem;
-  margin: 0.4rem; }
-  @media all and (min-width: 46.8em) {
-    .logo {
-      max-width: 9rem; } }
+  float: left; }
 
 .nav-toggle {
   float: right;
@@ -712,11 +707,17 @@ td {
 .text a {
   text-decoration: underline; }
 .text ul {
+  color: #666666;
+  font-size: 16px;
   list-style: disc;
   margin: 0 0 1em 1.2em; }
   .text ul ul {
+    color: #666666;
+    font-size: 16px;
     margin-bottom: 0; }
 .text ol {
+  color: #666666;
+  font-size: 16px;
   list-style: decimal;
   margin: 0 0 1em 1.5em; }
   .text ol ol {
