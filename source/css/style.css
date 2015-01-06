@@ -84,9 +84,23 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL ELEMENTS
     Added by Manny and JZ
 \*------------------------------------*/
+.breadcrumbs{
+  color: #00beff;
+  display: inline;
+  font-size: .714em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.breadcrumb-separator{
+  color: #ccc;
+  display: inline;
+  font-size: .714em;
+  cursor: default;
+}
+
 .sg-colors li{
   width: 24% !important;
-
 }
 
 .H1-Tablet{
