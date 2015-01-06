@@ -119,7 +119,12 @@ header, footer, nav, section, article, hgroup, figure {
   font-size:10px;
   font-weight: lighter;
   text-transform: uppercase;
+}
 
+.Content-Tablet{
+  color:#666666;
+  font-size:16px;
+  font-weight: lighter;
 }
 /*------------------------------------*\
     $GLOBAL CLASSES
