@@ -437,21 +437,39 @@ input[type="search"]::-webkit-search-decoration {
   color: gray; }
 
 /*------------------------------------*\
-    $Table
+    $Table edited by Manny and JZ
 \*------------------------------------*/
 table {
+  background-color: #f1f1f1;
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid gray;
   width: 100%; }
 
+thead {}
+
 th {
-  text-align: left;
-  border: 1px solid gray;
+  background-color: #999999;
+  border: 1px solid #dddddd;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: lighter;
+  height: 40px;
+  text-align: center;
+  padding: 0.2em; }
+
+tr {
+  font-size: 14px;
+  font-weight: lighter;
+  height: 40px;
+  text-align: center;
   padding: 0.2em; }
 
 td {
-  border: 1px solid gray;
+  border: 1px solid #dddddd;
+  color: #666666;
+  font-weight: lighter;
+  height: 40px;
+  text-align: center;
   padding: 0.2em; }
 
 .animate-fade {
