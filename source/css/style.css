@@ -440,8 +440,7 @@ input[type="search"]::-webkit-search-decoration {
     $Table edited by Manny and JZ
 \*------------------------------------*/
 table {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   background-color: #f1f1f1;
   border-collapse: collapse;
   border-spacing: 0;
@@ -468,8 +467,18 @@ tr {
   text-align: center;
   padding: 0.2em; }
 
+tr:last-child td:first-child{
+  border-bottom: 0px;
+}
+
+tr:last-child td:last-child{
+  border-bottom: 0px;
+}
+
+
 td {
-  border: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
   color: #666666;
   font-weight: lighter;
   height: 40px;
@@ -478,14 +487,12 @@ td {
 
 td:first-child, th:first-child{
   border-radius: 10px 0 0 0;
-  border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   border-top: 0;
   border-left: 0;
 }
 td:last-child, th:last-child{
   border-radius: 0 10px 0 0;
-  border-left: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   border-top: 0;
   border-right: 0;
