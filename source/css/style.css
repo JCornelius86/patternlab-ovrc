@@ -151,19 +151,33 @@ header, footer, nav, section, article, hgroup, figure {
 }
 
 input:focus{
+  font-size: 16px;
+  font-weight: lighter;
   outline: 1px solid #00beff;
 }
 
 .input-error:focus{
+  font-size: 16px;
+  font-weight: lighter;
   outline: 1px solid #f60;
 }
 
 .input-error{
+  font-size: 16px;
+  font-weight: lighter;
   border: 1px solid #f60;
 }
 
 .input-active{
+  font-size: 16px;
+  font-weight: lighter;
   border: 1px solid #00beff;
+}
+
+.input-normal{
+  font-size: 16px;
+  font-weight: lighter;
+  border: 1px solid #cccccc;
 }
 /*------------------------------------*\
     $GLOBAL CLASSES
