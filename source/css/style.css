@@ -92,16 +92,16 @@ header, footer, nav, section, article, hgroup, figure {
 .breadcrumbs{
   color: #00beff;
   display: inline;
-  font-size: .714em;
-  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: lighter;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .breadcrumb-separator{
-  color: #ccc;
   display: inline;
-  font-size: .714em;
-  cursor: default;
+  font-size: 10px;
+  padding-right: 11px;
 }
 
 .image-separator{
