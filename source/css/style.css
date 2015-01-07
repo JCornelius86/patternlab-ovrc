@@ -84,6 +84,11 @@ header, footer, nav, section, article, hgroup, figure {
     $GLOBAL ELEMENTS
     Added by Manny and JZ
 \*------------------------------------*/
+.div-background{
+  background-color: #000000;
+  display: block;
+}
+
 .breadcrumbs{
   color: #00beff;
   display: inline;
