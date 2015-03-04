@@ -12,6 +12,9 @@
 /* Defaults */
 /* Dimensions */
 /* Breakpoints */
+.sg-colors li {
+  width: 250px;
+}
 .demo {
   overflow: hidden;
   margin-bottom: 1rem; }
@@ -60,7 +63,7 @@
     @media all and (min-width: 30em) {
       .sg-colors li {
         float: left;
-        width: 5em; } }
+        width: 250px; } }
 
 .sg-swatch {
   display: block;

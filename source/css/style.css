@@ -63,6 +63,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
 */
+
 /*------------------------------------*\
     $RESET
 \*------------------------------------*/
@@ -81,7 +82,103 @@ header, footer, nav, section, article, hgroup, figure {
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
+    Added by Manny and JZ
 \*------------------------------------*/
+.div-background{
+  background-color: #000000;
+  display: block;
+}
+
+.breadcrumbs{
+  color: #00beff;
+  display: inline;
+  font-size: 10px;
+  font-weight: lighter;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.breadcrumb-separator{
+  display: inline;
+  font-size: 10px;
+  padding-right: 11px;
+}
+
+.image-separator{
+  margin-bottom: 40px;
+}
+
+.sg-colors li{
+  width: 24% !important;
+}
+
+.H1-Tablet{
+  color:#333333;
+  font-size:30px;
+  font-weight: lighter;
+}
+
+.H2-Tablet{
+  color:#333333;
+  font-size:24px;
+  font-weight: lighter;
+} 
+
+.H3-Tablet{
+  color:#333333;
+  font-size:18px;
+  font-weight: lighter;
+}  
+
+.H4-Tablet{
+  color:#999999;
+  font-size:16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.IconTitle{
+  color:#cccccc;
+  font-size:10px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.Content-Tablet{
+  color:#666666;
+  font-size:16px;
+  font-weight: lighter;
+}
+
+input:focus{
+  font-size: 16px;
+  font-weight: lighter;
+  outline: 1px solid #00beff;
+}
+
+.input-error:focus{
+  font-size: 16px;
+  font-weight: lighter;
+  outline: 1px solid #f60;
+}
+
+.input-error{
+  font-size: 16px;
+  font-weight: lighter;
+  border: 1px solid #f60;
+}
+
+.input-active{
+  font-size: 16px;
+  font-weight: lighter;
+  border: 1px solid #00beff;
+}
+
+.input-normal{
+  font-size: 16px;
+  font-weight: lighter;
+  border: 1px solid #cccccc;
+}
 /*------------------------------------*\
     $GLOBAL CLASSES
 \*------------------------------------*/
@@ -166,7 +263,7 @@ header, footer, nav, section, article, hgroup, figure {
 
 body {
   background: white;
-  font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font: 100%/1.5 "cs_regular", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
   color: #333333; }
 
@@ -274,12 +371,42 @@ button, input, select, textarea {
   margin: 0 1px 0; }
 
 input, textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fbfcfc;
+  color: #333;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  padding: 10px;
   width: 100%;
-  border: 1px solid gray;
-  padding: 0.5em 0.65rem; }
+  font-size: 1.143em;
+  margin-bottom: 5px;
+}
 
-input[type=text], input[type=search], input[type=url], input[type=number], textarea {
-  -webkit-appearance: none; }
+input[type=text], input[type=search], input[type=url], input[type=number],input[type=password] textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fbfcfc;
+  color: #333;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.143em;
+  margin-bottom: 5px;
+}
 
 button, input[type="submit"] {
   padding: 0.5em;
@@ -340,23 +467,66 @@ input[type="search"]::-webkit-search-decoration {
   color: gray; }
 
 /*------------------------------------*\
-    $Table
+    $Table edited by Manny and JZ
 \*------------------------------------*/
 table {
+  border-radius: 10px;
+  background-color: #f1f1f1;
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid gray;
   width: 100%; }
 
+thead {}
+
 th {
-  text-align: left;
-  border: 1px solid gray;
+  background-color: #999999;
+  border: 1px solid #dddddd;
+  border-top: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: lighter;
+  height: 40px;
+  text-align: center;
   padding: 0.2em; }
+
+tr {
+  font-size: 14px;
+  border-radius: 10px 0 0 0;
+  font-weight: lighter;
+  height: 40px;
+  text-align: center;
+  padding: 0.2em; }
+
+tr:last-child td:first-child{
+  border-bottom: 0px;
+}
+
+tr:last-child td:last-child{
+  border-bottom: 0px;
+}
+
 
 td {
-  border: 1px solid gray;
+  border-right: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  color: #666666;
+  font-weight: lighter;
+  height: 40px;
+  text-align: center;
   padding: 0.2em; }
 
+td:first-child, th:first-child{
+  border-radius: 10px 0 0 0;
+  border-bottom: 1px solid #dddddd;
+  border-top: 0;
+  border-left: 0;
+}
+td:last-child, th:last-child{
+  border-radius: 0 10px 0 0;
+  border-bottom: 1px solid #dddddd;
+  border-top: 0;
+  border-right: 0;
+}
 .animate-fade {
   -webkit-transition: opacity 0.3s ease-out;
   -moz-transition: opacity 0.3s ease-out;
@@ -552,12 +722,7 @@ td {
   border-bottom: 1px solid #dbdbdb; }
 
 .logo {
-  float: left;
-  max-width: 8rem;
-  margin: 0.4rem; }
-  @media all and (min-width: 46.8em) {
-    .logo {
-      max-width: 9rem; } }
+  float: left; }
 
 .nav-toggle {
   float: right;
@@ -668,11 +833,17 @@ td {
 .text a {
   text-decoration: underline; }
 .text ul {
+  color: #666666;
+  font-size: 16px;
   list-style: disc;
   margin: 0 0 1em 1.2em; }
   .text ul ul {
+    color: #666666;
+    font-size: 16px;
     margin-bottom: 0; }
 .text ol {
+  color: #666666;
+  font-size: 16px;
   list-style: decimal;
   margin: 0 0 1em 1.5em; }
   .text ol ol {
